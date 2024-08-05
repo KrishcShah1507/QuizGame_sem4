@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somaiya Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #140b0b;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 100px;
+        background-color:#f5fafa;
+        text-align: center;
+        align-items: baseline;
+        background-image: url('https://img.freepik.com/free-vector/hand-drawn-question-mark-pattern_23-2149416651.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1713398400&semt=ais');
+      }
+    h1 {
+      color: #3e3636;
+    }
+    p {
+      color: #555;
+    }
+    .question-container {
+      margin-top: 50px;
+    }
+    .question {
+      background-color: #090a0a;
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .option {
+      display: block;
+      padding: 10px 20px;
+      background-color: #e9eff5f9;
+      color: #0c0c0c;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .option:hover {
+      background-color: #0056b3;
+    }
+    .correct {
+      background-color: #28a745 !important;
+    }
+    .incorrect {
+      background-color: #dc3545 !important;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor:pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    header {
+        background-color: black;
+        color: #fef9f9;
+        line-height: 4;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+    footer {
+        background-color: #0a0808;
+        color: #f4f4f4;
+        margin-bottom: 50px;
+        text-align: center;
+        margin-top: auto;
+        padding: 10px;
+    }
+
+    .container2{
+        background-color: #20e016;
+        padding: 10px;    }
+
+    .container3{
+        background-color: beige;
+        border-radius: 50px;
+    }
+  </style>
+</head>
+<body>
+    <header> SOMAIYA QUIZ?
+    </header>
+    <div class="container3">
+    <h1>Hehe I know you might be wondering what is this...so explore...*This quiz is only for the somaiya students*...ATB :)</h1>
+    <img src="https://kjsce.somaiya.edu/assets/kjsce/img/homepage/infrastructure1.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="question-container">
+            <div class="question">
+                <h2>1)How many Somaiya institutions are there in total?</h2>
+                <div class="container2">
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">2</div>
+                    <div class="option" onclick="checkAnswer(this)">86</div>
+                    <div class="option" onclick="checkAnswer(this)">9</div>
+                    <div class="option" onclick="checkAnswer(this)">1</div>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="question">
+                <h2>2)Who was the guest for symphony '23?</h2>
+                <div class="container2">
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">Javed Akhtar</div>
+                    <div class="option" onclick="checkAnswer(this)">KK</div>
+                    <div class="option" onclick="checkAnswer(this)">John Cena</div>
+                    <div class="option" onclick="checkAnswer(this)">Shaan</div>
+                </div>
+                </div>
+            
+            </div>
+
+            <div class="question">
+                <h2>3)When will we get AC in our classrooms?</h2>
+                <div class="container2">
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">When we passout</div>
+                    <div class="option" onclick="checkAnswer(this)">After RCB wins IPL</div>
+                    <div class="option" onclick="checkAnswer(this)">When India wins a World cup</div>
+                    <div class="option" onclick="checkAnswer(this)">No..never</div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="question">
+            <h2>4)What is the most annoying thing of the following?</h2>
+            <div class="container2">
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this)">Lift never works</div>
+                <div class="option" onclick="checkAnswer(this)">Campus is too big to walk to classes</div>
+                <div class="option" onclick="checkAnswer(this)">No AC</div>
+                <div class="option" onclick="checkAnswer(this)">All of the above</div>
+            
+            </div>
+        </div>
+        </div>
+        <div class="question">
+            <h2>5)What is the purpose of maggi point?</h2>
+            <div class="container2">
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this)">Maggi ig?</div>
+                <div class="option" onclick="checkAnswer(this)">Scouting</div>
+                <div class="option" onclick="checkAnswer(this)">Idk it just exists</div>
+                <div class="option" onclick="checkAnswer(this)">To sell bad coffe</div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <h2>6)Which council is the best ?</h2>
+        <div class="container2">
+        <div class="options">
+            <div class="option" onclick="checkAnswer(this)">Security Council</div>
+            <div class="option" onclick="checkAnswer(this)">Sports Council</div>
+            <div class="option" onclick="checkAnswer(this)">PR peeps</div>
+            <div class="option" onclick="checkAnswer(this)">The whole thing</div>
+        
+        </div>
+    </div>
+</div>
+<div class="question">
+    <h2>7)What is the networth of Mr. Samir Somaiya?</h2>
+    <div class="container2">
+    <div class="options">
+        <div class="option" onclick="checkAnswer(this)">100 million$</div>
+        <div class="option" onclick="checkAnswer(this)">300 million$</div>
+        <div class="option" onclick="checkAnswer(this)">A lot</div>
+        <div class="option" onclick="checkAnswer(this)">Idk ask income tax people</div>
+    
+    </div>
+</div>
+</div>
+<div class="question">
+    <h2>8)Who won Sheild dance '23?</h2>
+    <div class="container2">
+    <div class="options">
+        <div class="option" onclick="checkAnswer(this)">IT</div>
+        <div class="option" onclick="checkAnswer(this)">EXTC</div>
+        <div class="option" onclick="checkAnswer(this)">COMPS</div>
+        <div class="option" onclick="checkAnswer(this)">MECH
+        </div>
+    
+    </div>
+</div>
+</div>
+<div class="question">
+    <h2>9)What crowd shouldnt be a part of the symphony next year?</h2>
+    <div class="container2">
+    <div class="options">
+       <input type="radio" placeholder="Answer according to you">SK peeps
+       <br>
+       <input type="radio" placeholder="Answer according to you">Poly peeps<br>
+       <input type="radio" placeholder="Answer according to you">Everyone but the engineering peeps
+
+
+    
+    </div>
+</div>
+</div>
+<div class="question">
+    <h2>10)Well...are you happy in somaiya ?</h2>
+    <div class="container2">
+    <div class="options">
+        <div class="option" onclick="checkAnswer(this)"><img src="https://media.tenor.com/6P0-gS-uvzwAAAAM/cat-sad.gif" style="max-width: 100%; max-height: 100%;" alt=""></div>
+        <div class="option" onclick="checkAnswer(this)"><img src="https://media.tenor.com/U0jM2f0wShsAAAAe/sometimes-maybe-good.png" style="max-width: 100%; max-height: 100%;" alt=""></div>
+        <div class="option" onclick="checkAnswer(this)"><img src="https://miro.medium.com/v2/resize:fit:1200/1*mHaijYuh4Gfqz2hV-nwv0A.jpeg" style="max-width: 100%; max-height: 100%;" alt=""></div>
+        <div class="option" font-weight="bold" onclick="checkAnswer(this)">Party chal rahi hai!<img src="https://media1.tenor.com/m/W06knTv2yOUAAAAd/jetha-dance.gif" alt="" style="max-width: 100%; max-height: 100%;">
+        </div>
+    
+    </div>
+</div>
+</div>
+    </div>
+
+
+        <button id="submitQuizBtn" onclick="submitQuiz()" disabled>End Quiz</button>
+    </div>
+<br>
+   
+    <script>
+        // Enable submit quiz button only when an option is selected
+        function checkAnswer(option) {
+            // Remove any previous selection
+            document.querySelectorAll('.option').forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+            });
+
+            // Check if the selected option is correct
+            if (option.innerText === "2" || option.innerText === "Shaan" || option.innerText === "No..never"|| option.innerText === "All of the above"|| option.innerText === "Maggi ig?"|| option.innerText === "The whole thing"|| option.innerText === "COMPS"|| option.innerText === "Daal Chinni"|| option.innerText === "1945"|| option.innerText === "Party chal rahi hai") {
+                option.classList.add('correct');
+                alert("Bravo! Correct Answer.");
+            } else {
+                option.classList.add('incorrect');
+            }
+
+            document.getElementById('submitQuizBtn').disabled = false;
+        }
+
+        function submitQuiz() {
+            let correctAnswers = document.querySelectorAll('.correct').length;
+            let totalQuestions = document.querySelectorAll('.question').length;
+            let score = Math.round((correctAnswers / totalQuestions) * 100);
+            window.location.href = `thankyou.html?score=${score}`;
+        }
+    </script>
+</body>
+<footer>
+    &copy2024.All rights reserved.
+</footer>
+
+</html>

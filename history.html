@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #010101;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 100px;
+        background-color:#f5fafa;
+        text-align: center;
+        align-items: baseline;
+        background-image: url('https://media.proprofs.com/images/QM/user_images/2503852/New%20Project%20(64)(161).jpg');
+      }
+    h1 {
+      color: #3e3636;
+    }
+    p {
+      color: #555;
+    }
+    .question-container {
+      margin-top: 50px;
+    }
+    .question {
+      background-color: #090a0a;
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .option {
+      display: block;
+      padding: 10px 20px;
+      background-color: #e9eff5f9;
+      color: #0c0c0c;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .option:hover {
+      background-color: #0056b3;
+    }
+    .correct {
+      background-color: #28a745 !important;
+    }
+    .incorrect {
+      background-color: #dc3545 !important;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor:pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    header {
+        background-color: black;
+        color: #fef9f9;
+        line-height: 4;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+    footer {
+        background-color: #0a0808;
+        color: #f4f4f4;
+        margin-bottom: 50px;
+        text-align: center;
+        margin-top: auto;
+        padding: 10px;
+    }
+
+    .container2{
+        background-color: #20e016;
+        padding: 10px;    }
+
+    .container3{
+        background-color: rgb(220, 195, 163);
+        border-radius: 30px;
+        border-radius: 50px;
+       
+    }
+  </style>
+</head>
+<body>
+    <header> THE HISTORY CATEGORY</header>
+    <div class="container3">
+    <h1>Bold of you to pick history...well this is the toughest out of all so...ATB :)</h1>
+    <img src="https://media.tenor.com/eNLQOvPhejEAAAAM/history-lincoln.gif"style="max-width: 40%; max-height: 10%;" alt="">
+    </div>
+    <br>
+    <div class="container">
+        <div class="question-container">
+            <div class="question">
+                <h2>1)When was slavery abolished?</h2>
+                <div class="container2">
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">1888</div>
+                    <div class="option" onclick="checkAnswer(this)">1886</div>
+                    <div class="option" onclick="checkAnswer(this)">1919</div>
+                    <div class="option" onclick="checkAnswer(this)">1909</div>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="question">
+                <h2>2)Who was the only king who was regarded as a 'Chakravarti' in Indian History?</h2>
+                <div class="container2">
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">Humayun</div>
+                    <div class="option" onclick="checkAnswer(this)">Akbar</div>
+                    <div class="option" onclick="checkAnswer(this)">Asoka</div>
+                    <div class="option" onclick="checkAnswer(this)">Maharana Pratap</div>
+                </div>
+                </div>
+            
+            </div>
+
+            <div class="question">
+                <h2>3)When was India independent for the first time?</h2>
+                <div class="container2">
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">15th August (12 pm)</div>
+                    <div class="option" onclick="checkAnswer(this)">15th August (12 am)</div>
+                    <div class="option" onclick="checkAnswer(this)">15th August (1 pm)</div>
+                    <div class="option" onclick="checkAnswer(this)">15th August (10.30 pm)</div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="question">
+            <h2>4)what was Michelangelo known for?</h2>
+            <div class="container2">
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this)">Frescoes</div>
+                <div class="option" onclick="checkAnswer(this)">Oil Paintings</div>
+                <div class="option" onclick="checkAnswer(this)">Sculptures</div>
+                <div class="option" onclick="checkAnswer(this)">Some other random medieval shit</div>
+            
+            </div>
+        </div>
+        </div>
+        <div class="question">
+            <h2>5)Who was the president when India won the World cup the second time?</h2>
+            <div class="container2">
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this)">Narendra Modi</div>
+                <div class="option" onclick="checkAnswer(this)">Indira Gandhi</div>
+                <div class="option" onclick="checkAnswer(this)">Manmohan Singh</div>
+                <div class="option" onclick="checkAnswer(this)">Rahul G (Pappu)</div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <h2>6)Which was the first Indian Movie to be released in 'colour' ?</h2>
+        <div class="container2">
+        <div class="options">
+            <div class="option" onclick="checkAnswer(this)">Anand </div>
+            <div class="option" onclick="checkAnswer(this)">Sholay</div>
+            <div class="option" onclick="checkAnswer(this)">Mughal-e-Azam</div>
+            <div class="option" onclick="checkAnswer(this)">Dhoom 3</div>
+        
+        </div>
+    </div>
+</div>
+<div class="question">
+    <h2>7)In the current scheme of geography wich state was Mahabharata was fought?</h2>
+    <img src="  https://staticimg.amarujala.com/assets/images/2016/04/13/mahabharat-war-krishna-arjun_1460546984.jpeg" style="max-width: 60%; max-height: 20%;" alt="">
+    <div class="container2">
+    <div class="options">
+        <div class="option" onclick="checkAnswer(this)"> Haryana</div>
+        <div class="option" onclick="checkAnswer(this)">UP</div>
+        <div class="option" onclick="checkAnswer(this)">MP</div>
+        <div class="option" onclick="checkAnswer(this)">Delhi NCR</div>
+    
+    </div>
+</div>
+</div>
+<div class="question">
+    <h2>8)For which spice did the British came to India to do buissness for?</h2>
+    <div class="container2">
+    <div class="options">
+        <div class="option" onclick="checkAnswer(this)">Elaichi</div>
+        <div class="option" onclick="checkAnswer(this)">Daal Chinni</div>
+        <div class="option" onclick="checkAnswer(this)">Adrak</div>
+        <div class="option" onclick="checkAnswer(this)">Namak(coz their food sucks)</div>
+    
+    </div>
+</div>
+</div>
+<div class="question">
+    <h2>9)When was the UN established?</h2>
+    <div class="container2">
+    <div class="options">
+        <div class="option" onclick="checkAnswer(this)">1999</div>
+        <div class="option" onclick="checkAnswer(this)">1944</div>
+        <div class="option" onclick="checkAnswer(this)">1945</div>
+        <div class="option" onclick="checkAnswer(this)">1953</div>
+    
+    </div>
+</div>
+</div>
+<div class="question">
+    <h2>10)What happened at 9/11 ?</h2>
+    <div class="container2">
+    <div class="options">
+        <div class="option" onclick="checkAnswer(this)">Taliban invasion</div>
+        <div class="option" onclick="checkAnswer(this)">Boom Boom</div>
+        <div class="option" onclick="checkAnswer(this)">Terrorist attack</div>
+        <div class="option" onclick="checkAnswer(this)">Brexit
+        </div>
+    
+    </div>
+</div>
+</div>
+    </div>
+
+
+        <button id="submitQuizBtn" onclick="submitQuiz()" disabled>End Quiz</button>
+    </div>
+<br>
+   
+    <script>
+        // Enable submit quiz button only when an option is selected
+        function checkAnswer(option) {
+            // Remove any previous selection
+            document.querySelectorAll('.option').forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+            });
+
+            // Check if the selected option is correct
+            if (option.innerText === "1886" || option.innerText === "Asoka" || option.innerText === "15th August (12 am)"|| option.innerText === "Frescoes"|| option.innerText === "Manmohan Singh"|| option.innerText === "Mughal-e-Azam"|| option.innerText === "Haryana"|| option.innerText === "Daal Chinni"|| option.innerText === "1945"|| option.innerText === "Terrorist attack") {
+                option.classList.add('correct');
+                alert("Bravo! Correct Answer.");
+            } else {
+                option.classList.add('incorrect');
+            }
+
+            document.getElementById('submitQuizBtn').disabled = false;
+        }
+
+        function submitQuiz() {
+            let correctAnswers = document.querySelectorAll('.correct').length;
+            let totalQuestions = document.querySelectorAll('.question').length;
+            let score = Math.round((correctAnswers / totalQuestions) * 100);
+            window.location.href = `thankyou.html?score=${score}`;
+        }
+    </script>
+</body>
+<footer>
+    &copy2024.All rights reserved.
+</footer>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #070707;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 100px;
+        background-color:#287012;
+        text-align: center;
+        align-items: baseline;
+        background-image: url('https://i.pinimg.com/originals/c9/b1/43/c9b14344eaeb4e79e49885234ca37014.jpg');
+      }
+    h1 {a
+      color: #3e3636;
+    }
+    p {
+      color: #555;
+    }
+    .question-container {
+      margin-top: 50px;
+    }
+    .question {
+      background-color: #090a0a;
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .option {
+      display: block;
+      padding: 10px 20px;
+      background-color: #e9eff5f9;
+      color: #0c0c0c;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .option:hover {
+      background-color: #0056b3;
+    }
+    .correct {
+      background-color: #28a745 !important;
+    }
+    .incorrect {
+      background-color: #dc3545 !important;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor:pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    header {
+        background-color: black;
+        color: #fef9f9;
+        line-height: 4;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+    footer {
+        background-color: #0a0808;
+        color: #f4f4f4;
+        margin-bottom: 50px;
+        text-align: center;
+        margin-top: auto;
+        padding: 10px;
+    }
+
+    .container2{
+        background-color: #20e016;
+        padding: 10px;    }
+
+        .container3{
+            background-color: beige;
+            color: #0a0808;
+            padding: 30px;
+            border-radius: 50px;
+            
+           
+        }
+
+        .container3 img{
+
+        }
+
+  </style>
+</head>
+<body>
+    <header> THE SPORTS CATEGORY</header>
+    <div class="container3">
+    <h1>Heyy Sports!!...that's interesting.Let's see how much you know.ATB :)</h1>
+   <img src="https://images.squarespace-cdn.com/content/v1/5ce318b7543d020001249f84/1581968412213-OTYIG32O19Z9Q7B1Y47M/SC02_HighwayLayup_Sarah_v4.gif" style="max-width:500px;" ;" alt="">
+   </div>
+   <br>
+   <div class="container">
+        <div class="question-container">
+            <div class="question">
+                <h2>1)What do the 5 rings in the olympic logo represent?</h2>
+                <img src="https://cdn.britannica.com/01/23901-050-33507FA4/flag-Olympic-Games.jpg"  style="max-width: 10%; max-height: 2%;" alt="">
+                <div class="container2">
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">5 Major Sports</div>
+                    <div class="option" onclick="checkAnswer(this)">5 Medals</div>
+                    <div class="option" onclick="checkAnswer(this)">5 Continents</div>
+                    <div class="option" onclick="checkAnswer(this)">5 Major Rules of Sports</div>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="question">
+                <h2>2)In which year did Virat Kohli score 973 runs in the ipl?</h2>
+                <div class="container2">
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">2015</div>
+                    <div class="option" onclick="checkAnswer(this)">2014</div>
+                    <div class="option" onclick="checkAnswer(this)">2016</div>
+                    <div class="option" onclick="checkAnswer(this)">2018</div>
+                </div>
+                </div>
+            
+            </div>
+
+            <div class="question">
+                <h2>3)Who is the latest WWE superstar added to the raw roster of 2023?</h2>
+                <div class="container2">
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">Logan Paul</div>
+                    <div class="option" onclick="checkAnswer(this)">Drew Mcintyre</div>
+                    <div class="option" onclick="checkAnswer(this)">Ricochet</div>
+                    <div class="option" onclick="checkAnswer(this)">John Cena</div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="question">
+            <h2>4)In the 2023 Cricket world cup who was the leading run scorer?</h2>
+            <div class="container2">
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this)">Virat Kohli</div>
+                <div class="option" onclick="checkAnswer(this)">Rohit Sharma</div>
+                <div class="option" onclick="checkAnswer(this)">Quinton De cock</div>
+                <div class="option" onclick="checkAnswer(this)">Rachin Ravindra</div>
+            
+            </div>
+        </div>
+        </div>
+        <div class="question">
+            <h2>5)Who won the 'Puskas Award' in 2009?</h2>
+            <div class="container2">
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this)">Sachin Tendulkar</div>
+                <div class="option" onclick="checkAnswer(this)">Cristiano Ronaldo</div>
+                <div class="option" onclick="checkAnswer(this)">Lionel Messi</div>
+                <div class="option" onclick="checkAnswer(this)">Dani Guiza</div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <h2>6)Which of the following is not a real name for a delivery bowled in cricket ?</h2>
+        <div class="container2">
+        <div class="options">
+            <div class="option" onclick="checkAnswer(this)">In swing </div>
+            <div class="option" onclick="checkAnswer(this)">Doosra</div>
+            <div class="option" onclick="checkAnswer(this)">Fickle</div>
+            <div class="option" onclick="checkAnswer(this)">Slider</div>
+        
+        </div>
+    </div>
+</div>
+<div class="question">
+    <h2>7)In football which fan base is also known as 'Cules'?</h2>
+    <img src=""  alt="">
+    <div class="container2">
+    <div class="options">
+        <div class="option" onclick="checkAnswer(this)"> Arsenal</div>
+        <div class="option" onclick="checkAnswer(this)">Bayern Munchen</div>
+        <div class="option" onclick="checkAnswer(this)">RB Leipzig</div>
+        <div class="option" onclick="checkAnswer(this)">Fc Barcelona</div>
+    
+    </div>
+</div>
+</div>
+<div class="question">
+    <h2>8)Who was the winner of the world championship 2023 in F1?</h2>
+    <img src="https://cdn-8.motorsport.com/images/mgl/2wBVkAp0/s8/max-verstappen-red-bull-racing-1.jpg" style="max-width: 40%; max-height: 10%;" alt="">
+    <div class="container2">
+    <div class="options">
+        <div class="option" onclick="checkAnswer(this)"> Max Verstappen</div>
+        <div class="option" onclick="checkAnswer(this)">Louis Hamilton</div>
+        <div class="option" onclick="checkAnswer(this)">Charles Leclare</div>
+        <div class="option" onclick="checkAnswer(this)">Aryton Senna</div>
+    
+    </div>
+</div>
+</div>
+<div class="question">
+    <h2>9)Which country won the 2016 t20wc in cricket?</h2>
+    <div class="container2">
+    <div class="options">
+        <div class="option" onclick="checkAnswer(this)">West Indies</div>
+        <div class="option" onclick="checkAnswer(this)">India</div>
+        <div class="option" onclick="checkAnswer(this)">England</div>
+        <div class="option" onclick="checkAnswer(this)">Pakistan</div>
+    
+    </div>
+</div>
+</div>
+<div class="question">
+    <h2>10)Who is regarded as the best batsman in cricket (according to the no. of runs scored) ?</h2>
+    <div class="container2">
+    <div class="options">
+        <div class="option" onclick="checkAnswer(this)">Don Bradman</div>
+        <div class="option" onclick="checkAnswer(this)">Sachin Tendulkar</div>
+        <div class="option" onclick="checkAnswer(this)">Sir Viv Richards</div>
+        <div class="option" onclick="checkAnswer(this)">Kumar Sangakara
+        </div>
+    
+    </div>
+</div>
+</div>
+    </div>
+
+
+        <button id="submitQuizBtn" onclick="submitQuiz()" disabled>End Quiz</button>
+    </div>
+<br>
+   
+<script>
+    // Enable submit quiz button only when an option is selected
+    function checkAnswer(option) {
+        // Remove any previous selection
+        document.querySelectorAll('.option').forEach(option => {
+            option.classList.remove('correct', 'incorrect');
+        });
+
+        // Check if the selected option is correct
+        if (option.innerText === "5 Continents" || option.innerText === "2016" || option.innerText === "Logan Paul"|| option.innerText === "Ferrari"|| option.innerText === "Virat Kohli"|| option.innerText === "Cristiano Ronaldo"|| option.innerText === "Fickle"|| option.innerText === "Fc Barcelona"|| option.innerText === "Max Verstappen"|| option.innerText === "West Indies"|| option.innerText === "Sachin Tendulkar") {
+            option.classList.add('correct');
+            alert("Bravo! Correct Answer.");
+        } else {
+            option.classList.add('incorrect');
+        }
+
+        document.getElementById('submitQuizBtn').disabled = false;
+    }
+
+    function submitQuiz() {
+        let correctAnswers = document.querySelectorAll('.correct').length;
+        let totalQuestions = document.querySelectorAll('.question').length;
+        let score = Math.round((correctAnswers / totalQuestions) * 100);
+        window.location.href = `thankyou.html?score=${score}`;
+    }
+</script>
+</body>
+<footer>
+    &copy2024.All rights reserved.
+</footer>
+
+</html>
